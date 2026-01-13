@@ -1,0 +1,145 @@
+/* 1. FUENTE MODERNA */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* 2. VARIABLES "UNO DARK" */
+:root {
+  /* Fondo negro profundo (como la carta) */
+  --bg-dark: #09090b; 
+  
+  /* Cristal Oscuro para las tarjetas */
+  --glass-dark: rgba(30, 30, 35, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  
+  /* Colores UNO Vibrantes */
+  --uno-blue: #00d2ff;
+  --uno-red: #ff4b4b;
+  --uno-yellow: #0a0801;
+  --uno-green: #2ecc71;
+  --uno-gradient: linear-gradient(135deg, var(--uno-blue) 0%, #3a7bd5 100%);
+  
+  --text-main: #ffffff;
+  --text-muted: #a1a1aa;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-dark);
+  /* Un fondo sutil con degradados oscuros para que no sea negro plano */
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(0, 210, 255, 0.08), transparent 25%), 
+    radial-gradient(circle at 85% 30%, rgba(255, 75, 75, 0.08), transparent 25%);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+/* 3. NAVBAR (Cristal Negro) */
+.navbar {
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  color: var(--uno-yellow) !important; /* Amarillo UNO */
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 4. TARJETAS OSCURAS (Dark Cards) */
+.card {
+  background: var(--glass-dark) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(4px);
+  color: var(--text-main);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--uno-blue) !important; /* Borde azul al pasar el mouse */
+  box-shadow: 0 10px 40px -10px rgba(0, 210, 255, 0.3); /* Resplandor azul */
+}
+
+.card-title {
+  color: var(--uno-blue);
+}
+
+.card-header {
+  border-bottom: 1px solid var(--glass-border) !important;
+  color: var(--uno-yellow) !important;
+}
+
+/* 5. INPUTS MODO OSCURO */
+.form-control {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid var(--glass-border) !important;
+  color: white !important;
+  border-radius: 10px !important;
+}
+
+.form-control:focus {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-color: var(--uno-green) !important; /* Borde verde al escribir */
+  box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.1) !important;
+}
+
+/* Placeholder gris suave */
+.form-control::placeholder {
+  color: #6c757d;
+}
+
+/* 6. BOTONES NEÓN */
+.btn-primary {
+  background: var(--uno-gradient) !important;
+  border: none !important;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 6px 20px rgba(0, 210, 255, 0.5);
+}
+
+.btn-success {
+  background: var(--uno-green) !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+}
+
+.btn-danger {
+  background: var(--uno-red) !important;
+  border: none !important;
+}
+
+/* 7. RANKING LIST */
+.list-group-item {
+  background: transparent !important;
+  color: white !important;
+  border-color: var(--glass-border) !important;
+}
+
+/* El #1 brilla como el oro */
+.list-group-item:first-child {
+  background: linear-gradient(90deg, rgba(255, 202, 40, 0.1), transparent) !important;
+  border-left: 4px solid var(--uno-yellow) !important;
+}
+
+/* Badges */
+.badge {
+  font-weight: 500;
+  padding: 8px 12px;
+}
+.bg-primary { background-color: var(--uno-blue) !important; }
+.bg-secondary { background-color: #4b5563 !important; }
+
+/* Textos pequeños */
+.text-muted {
+  color: var(--text-muted) !important;
+}
