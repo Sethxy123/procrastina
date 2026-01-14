@@ -1,11 +1,12 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://unwhipt-wilford-transcontinentally.ngrok-free.dev/api',
-    headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-    }
+  baseURL: 'https://unwhipt-wilford-transcontinentally.ngrok-free.dev/api', // Tu URL (ya está bien)
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+    'ngrok-skip-browser-warning': 'true' // <--- ¡AGREGA ESTA LÍNEA MÁGICA! ✨
+  }
 });
 
 // Interceptor para agregar el token automáticamente

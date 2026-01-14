@@ -62,7 +62,7 @@ const login = async () => {
                         </div>
 
                         <button type="submit" class="btn btn-primary w-100">Entrar</button>
-                        <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                       
 
 <div class="mt-4 text-center">
     <span class="text-muted">¿Nuevo aquí? </span>

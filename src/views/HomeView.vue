@@ -75,7 +75,7 @@ onMounted(() => {
 <template>
     <div>
         <nav class="navbar navbar-dark bg-primary mb-4 rounded px-3 d-flex justify-content-between">
-            <span class="navbar-brand mb-0 h1"> EL face pa´  huevones</span>
+            <span class="navbar-brand mb-0 h1"> EL face pa´  huevones!!!</span>
             <button @click="logout" class="btn btn-danger btn-sm">Salir</button>
         </nav>
 
